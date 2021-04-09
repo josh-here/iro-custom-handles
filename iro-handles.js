@@ -1295,8 +1295,8 @@
               overflow: 'visible'
           } },
           url && (h("use", Object.assign({ xlinkHref: resolveSvgUrl(url) }, props.props))),
-          !url && (h("circle", { r: radius, fill: "none", "stroke-width": 2, stroke: "#000" })),
-          !url && (h("circle", { r: radius - 2, fill: props.fill, "stroke-width": 2, stroke: "#fff" }))));
+         // !url && (h("circle", { r: radius, fill: "none", "stroke-width": 2, stroke: "#000" })),
+          !url && (h("circle", { r: radius - 14, fill: props.fill, "stroke-width": 2, stroke: "#fff" }))));
   }
   IroHandle.defaultProps = {
       fill: 'none',
